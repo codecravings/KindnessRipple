@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Home Page</title>
+</head>
+<body>
+<div class="glass-container">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button type="button">Search</button>
+    </div>
+
+    <div class="buttons">
+        <button class="nav-button" onclick="navigate('Home')">Home</button>
+        <button class="nav-button" onclick="navigate('Organizations')"> Organizations</button>
+        <button class="nav-button" onclick="navigate('Help')">Help with no money</button>
+        <button class="nav-button" onclick="navigate('MostGenerous')">Most Generous</button>
+        <button class="nav-button" onclick="navigate('MyProfile')">My Profile</button>
+    </div>
+
+
+</div>
+<div class="card-slider">
+    <div class="slider-container">
+        <button class="prev-button">&#9664;</button>
+        <div class="card-slider">
+            <!-- Your card elements go here -->
+            <div class="card"><div class="card-content">
+                <div class="circle-image">
+                    <img src="circle-image-1.png" alt="Circle Image 1">
+                </div>
+                <p class="text-above">Text Above Image 1</p>
+                <img src="main-image-1.jpg" alt="Main Image 1">
+                <p class="text-below">Text Below Image 1</p>
+                <div class="heart-container">
+                    <img class="heart" onclick="likeCard(this)" src="heart.png" alt="Heart Icon">
+                    <span class="like-count">0</span>
+                </div>
+            </div></div>
+            <div class="card"><div class="card-content">
+                <div class="circle-image">
+                    <img src="circle-image-1.png" alt="Circle Image 1">
+                </div>
+                <p class="text-above">Text Above Image 1</p>
+                <img src="main-image-1.jpg" alt="Main Image 1">
+                <p class="text-below">Text Below Image 1</p>
+                <div class="heart-container">
+                    <img class="heart" onclick="likeCard(this)" src="heart.png" alt="Heart Icon">
+                    <span class="like-count">0</span>
+                </div>
+            </div></div>
+            <div class="card"><div class="card-content">
+                <div class="circle-image">
+                    <img src="circle-image-1.png" alt="Circle Image 1">
+                </div>
+                <p class="text-above">Text Above Image 1</p>
+                <img src="main-image-1.jpg" alt="Main Image 1">
+                <p class="text-below">Text Below Image 1</p>
+                <div class="heart-container">
+                    <img class="heart" onclick="likeCard(this)" src="heart.png" alt="Heart Icon">
+                    <span class="like-count">0</span>
+                </div>
+            </div></div>
+            <!-- Add more cards as needed -->
+        </div>
+        <button class="next-button">&#9654;</button>
+    </div>
+
+
+    =
+
+    <!-- Repeat the above card structure for more cards -->
+</div>
+<div class="video-slider-container">
+    <h2>Featured Videos</h2>
+    <div class="thumbnail-slider">
+        <div class="thumbnail" data-video="v1.mp4">
+            <img src="immg1.png" alt="Thumbnail 1" />
+        </div>
+        <div class="thumbnail" data-video="imgg2.mp4">
+            <img src="imggg2.png" alt="Thumbnail 2" />
+        </div>
+        <!-- Add more thumbnails as needed -->
+    </div>
+    <div class="video-player">
+        <video controls></video>
+    </div>
+</div>
+<script src="myscript.js"></script>
+<script>
+    function navigate(destination) {
+        alert(`Navigating to ${destination}`);
+    }
+</script>
+</body>
+</html>
